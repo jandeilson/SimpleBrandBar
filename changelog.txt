@@ -1,0 +1,10 @@
+Version 1.0.2 - 27.07.2015
+===============================================
+Fix: Some database bugs
+Added: CSS style improvements
+
+===============================================
+Version 1.0.1 - 26.07.2015
+===============================================
+Updated: Admin CSS
+Added: Login Form

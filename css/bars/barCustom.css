@@ -1,0 +1,88 @@
+/**
+ * BrandBar Custom Style is part of the awesome php script Simple BrandBar that you put your own code.
+ * 
+ More about Simple BrandBar
+ * https://github.com/jandeilson/simplebrandbar
+ */
+
+/* CSS Reset */
+a, abbr, address, article, aside, audio, b, blockquote, body, canvas, 
+caption, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset,
+figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup,
+html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, 
+object, ol, p, pre, q, samp, section, small, span, strong, summary, 
+table, tbody, td, tfoot, th, thead, time, tr, ul, var, video { margin: 0; padding: 0; border: 0; font-size: 100%; font-weight: inherit; font-style: inherit; }
+
+article, aside, canvas, details, figcaption, figure, footer, header, 
+hgroup, menu, nav, section, summary { display: block; }
+
+a, ins, del { text-decoration: none; }
+
+ul, ol { list-style: none; }
+
+table { border-spacing: 0; border-collapse: collapse; }
+
+caption, th { text-align: left; }
+
+q:after, q:before { content: ""; }
+
+/* BrandBar Style 1 */
+
+html { height: 100%; margin: 0; padding: 0;}
+
+body, input, textarea { line-height: 18px; height: 100%; color: #cdcdcd; font-size: 13px; font-family: Arial, Tahoma, Helvetica, sans-serif; margin: 0; padding: 0;}
+
+body {overflow: hidden;}
+
+a { color: #e8f5e9; }
+
+html { height: 100%; margin: 0; padding: 0;}
+body, input, textarea { line-height: 18px; height: 100%; color: #cdcdcd; font-size: 13px; font-family: Arial, Tahoma, Helvetica, sans-serif; margin: 0; padding: 0;}
+body {overflow: hidden;}
+
+a { color: #e8f5e9; }
+
+#iframe { margin-top:50px; width:100%; border:none; }
+
+#top_bar { height: 50px; background:#00e676; color: #e8f5e9; position:fixed; z-index:9997px; width:100%; }
+
+.logo { float: left; }
+.title { float: left; line-height: 50px; font-size:14px; padding: 0 20px; color:#212121; text-transform: uppercase;}
+.select { float: right; padding: 9px 5px 9px 10px; text-transform: uppercase;}
+.discover { float: right; padding: 9px 10px 9px 5px; text-transform: uppercase; }
+.close { float: right; }
+
+a#logo { text-indent: -9999px; display: block; width:170px; height:50px; background:#e8f5e9 url(https://dl.dropboxusercontent.com/s/httwpy9iip5xeew/logo.png) no-repeat center; }
+a#logo:hover { background-color:none;}
+
+a.btn_discover { height:32px; line-height:32px; padding:0 10px 0 30px; display: block; background:#0288d1 url(https://dl.dropbox.com/s/6vadi0tdel345qy/discover-ico.png) no-repeat 10px center; color:#e8f5e9; font-weight:bold;}
+a:hover.btn_discover{ background-color:#01579b; }
+
+a.btn_close { width: 50px; height: 50px; overflow: hidden; text-indent: -9999px; display: block; background: url(https://dl.dropbox.com/s/wk04dbmv4nsng33/close-ico.png) no-repeat center; border-left:1px dashed #e8f5e9; }
+a:hover.btn_close { background-color:#ef5350; }
+
+.select_box { position: relative; z-index: 9997; height:32px; line-height:32px; width: 225px; background:#212121; cursor: pointer; }
+.select_box > span { background: url(https://dl.dropbox.com/s/cke6iwyh9ye40bl/select-ico.png) no-repeat 13px center; display: block; padding-left: 29px; color: #e8f5e9; }
+.select_box.active {height:41px;}
+.select_box ul { display: none; position: absolute; left: 0; top:41px; z-index: 9998; width: 301px; background:#212121; }
+.select_box ul li { border-bottom: 1px solid #424242; text-align:center; width:150px; float:left;}
+.select_box ul li:nth-child(odd) { border-right:1px solid #424242;}
+.select_box ul li.last { border-bottom: 0; }
+.select_box ul li a { display: block; padding: 0 5px; }
+.select_box ul li a:hover { background:#00e676; color: #212121; }
+.select_box ul li img { position:absolute; right:300px; top:0; border:5px solid #00e676; display:none; z-index:9999;}
+.select_box ul li:hover img { display:block;}
+
+.chrome { width:152px; height:31px; background:url(../img/chrome.png) center no-repeat; float:right; padding:9px 0;}
+
+/* Responsive (devices and browsers) */
+@media only screen and (max-width: 875px){
+	#top_bar .select { display:none;}
+}
+@media only screen and (max-width: 635px){
+	#top_bar .title { display:none;}
+}
+@media only screen and (max-width: 375px){
+	#top_bar .discover { display:none;}
+}
+
